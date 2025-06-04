@@ -1,0 +1,9 @@
+name: Ubuntu
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v1
